@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin:0;
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+
+    font-family:'Manrope', sans-serif;
+
+    font-weight:300;
+
+    color:#000;
+
+}
+
+header {
+
+    text-align:center;
+
+    margin-top:20mm;
+
+    margin-bottom:20mm;
+
+}
+
+
+
+.logo img {
+
+    width:clamp(120px,15vw,180px);
+
+    height:auto;
+
+    margin:auto;
+
+}
+
+
+.subtitle {
+
+    margin-top:10mm;
+
+    font-style:italic;
+
+    font-size:20px;
+
+}
+
+
+
+
+.gallery {
+
+    width:min(80%, 1200px);
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20mm;
+
+}
+
+
+
+.project {
+
+    overflow:hidden;
+
+}
+
+
+
+.project img {
+
+    width:100%;
+
+    height:auto;
+
+    display:block;
+
+    cursor:pointer;
+
+    opacity:1;
+
+    transition:opacity 0.3s ease;
+
+}
+
+
+
+footer {
+
+
+    text-align:center;
+
+    margin-top:20mm;
+
+    margin-bottom:20mm;
+
+    font-size:16px;
+
+
+}
+
+
+footer p {
+
+    margin:10mm 0;
+
+}
+
+
+
+/* Adaptation téléphone */
+
+@media(max-width:700px){
+
+
+header {
+
+    margin-top:10mm;
+
+}
+
+
+.gallery {
+
+    width:90%;
+
+    grid-template-columns:1fr;
+
+    gap:8mm;
+
+}
+
+
+.subtitle {
+
+    font-size:16px;
+
+}
+
+
+footer {
+
+    font-size:14px;
+
+}
+
+
+}
+
+
+.logo{
+
+font-size:55px;
+
+}
+
+}
+
+.social a,
+.social a:visited {
+
+    color:#000000;
+
+    text-decoration:none;
+
+}
+
+
+.social a:hover {
+
+    opacity:0.5;
+
+}
+
+@media(max-width:1000px){
+
+
+.gallery {
+
+    width:85%;
+
+}
+
+
+.logo img {
+
+    width:150px;
+
+}
+
+
+}
